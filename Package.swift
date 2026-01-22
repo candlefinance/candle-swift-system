@@ -25,7 +25,7 @@ let swiftSettings: [SwiftSetting] = [
 ]
 
 let package = Package(
-  name: "candle-swift-system",
+  name: "swift-system",
   products: [],
   dependencies: [],
   targets: [])
