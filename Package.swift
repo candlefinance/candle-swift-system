@@ -26,26 +26,6 @@ let swiftSettings: [SwiftSetting] = [
 
 let package = Package(
   name: "candle-swift-system",
-  products: [
-    .library(name: "SystemPackage", targets: ["SystemPackage"]),
-  ],
+  products: [],
   dependencies: [],
-  targets: [
-    .target(
-      name: "CSystem",
-      dependencies: [],
-      exclude: ["CMakeLists.txt"],
-      cSettings: cSettings),
-    .target(
-      name: "SystemPackage",
-      dependencies: ["CSystem"],
-      path: "Sources/System",
-      exclude: ["CMakeLists.txt"],
-      cSettings: cSettings,
-      swiftSettings: swiftSettings),
-    .testTarget(
-      name: "SystemTests",
-      dependencies: ["SystemPackage"],
-      cSettings: cSettings,
-      swiftSettings: swiftSettings),
-  ])
+  targets: [])
